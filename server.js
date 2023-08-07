@@ -24,7 +24,7 @@ socketServer.registerSocketServer(server);
 mongoose.set('strictQuery', false);
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect("mongodb+srv://atul:ermechcoder@cluster0.fq4j3um.mongodb.net/liveroom?retryWrites=true&w=majority")
   .then(() => {
     server.listen(PORT, () => {
       console.log(`Server is listening on ${PORT}`);
