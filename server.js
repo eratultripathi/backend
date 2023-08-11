@@ -30,7 +30,7 @@ socketServer.registerSocketServer(server);
 mongoose.set('strictQuery', false);
 
 mongoose
-  .connect("mongodb+srv://atul:ermechcoder@cluster0.fq4j3um.mongodb.net/liveroom?retryWrites=true&w=majority"
+  .connect('mongodb+srv://atul:ermechcoder@cluster0.fq4j3um.mongodb.net/trackercrm?retryWrites=true&w=majority'
 )
   .then(() => {
     server.listen(PORT, () => {
